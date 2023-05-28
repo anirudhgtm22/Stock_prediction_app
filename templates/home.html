@@ -1,0 +1,39 @@
+<!-- home.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Home - Stock Prediction App{% endblock %}
+
+{% block content %}
+<div class="homepage">
+    <div class="background-image">
+        <img src
+    </div>
+    <div class="content">
+        <h2 class="text-center">Welcome to the Stock Prediction App!</h2>
+        <p>Select the market:</p>
+        <div class="market-selection">
+            <label for="market-select">Choose a market:</label>
+            <select id="market-select">
+                <option value="indian">Indian Stocks</option>
+                <option value="us">US Stocks</option>
+            </select>
+        </div>
+        <p>Select the algorithm For Prediction:</p>
+        <div class="algorithm-selection">
+            <label for="algorithm-select">Choose an algorithm:</label>
+            <select id="algorithm-select">
+            <option value="algorithm1">Algorithm 1</option>
+            <option value="algorithm2">Algorithm 2</option>
+            </select>
+        </div>
+        <p>Select the market:</p>
+        <div class="market-selection">
+            <label for="market-select">Choose a market:</label>
+            <select id="market-select">
+            <option value="" selected disabled>Select a stock</option>
+            </select>
+        </div>
+    </div>
+</div>
+{% endblock %}
